@@ -3,82 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eco Rides - Book Your Ride Today!</title>
-  <link rel="stylesheet" href="style.css">  </head>
+  <title>Eco Rides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
   <header>
     <h1>Eco Rides</h1>
+    <p>Your Sustainable Ride to Anywhere</p>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <a href="#">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </nav>
+    <div class="login-signup">
+      <button>Login</button>
+      <button>Sign Up</button>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <img src="images/ride.jpg" alt="Eco-friendly car ride" class="hero-image">
-      <div class="hero-content">
-        <h2>The Future of Ridesharing is Green</h2>
-        <p>Book an eco-friendly ride with Eco Rides and get where you need to be while reducing your carbon footprint. Our drivers use fuel-efficient vehicles and prioritize responsible driving practices.</p>
-        <div class="buttons">
-          <a href="#" class="btn btn-primary">Sign Up</a>
-          <a href="#" class="btn btn-secondary">Login</a>
-        </div>
+      <img src="images/eco-ride.jpg" alt="Eco-friendly car driving through a scenic landscape">
+      <div class="hero-text">
+        <h2>Ride Green, Ride Eco Rides</h2>
+        <p>Book a comfortable and eco-friendly ride with Eco Rides. We offer a variety of vehicles to meet your needs, all committed to reducing our carbon footprint.</p>
+        <a href="#">Book Now</a>
       </div>
     </section>
 
     <section class="info">
       <h2>Why Choose Eco Rides?</h2>
-      <div class="info-cards">
-        <div class="card">
-          <h3>Save Money</h3>
-          <p>Our competitive pricing makes riding with Eco Rides an affordable way to get around.</p>
-        </div>
-        <div class="card">
-          <h3>Save the Planet</h3>
-          <p>By choosing Eco Rides, you're contributing to a greener future for all.</p>
-        </div>
-        <div class="card">
-          <h3>Safe & Reliable</h3>
-          <p>All our drivers are background checked and undergo thorough training to ensure your safety.</p>
-        </div>
+      <div class="info-card">
+        <h3>Environmentally Friendly</h3>
+        <p>Our vehicles are fuel-efficient or electric, minimizing emissions and contributing to a greener planet.</p>
+      </div>
+      <div class="info-card">
+        <h3>Safe and Reliable</h3>
+        <p>We maintain our vehicles to the highest standards and prioritize passenger safety on every ride.</p>
+      </div>
+      <div class="info-card">
+        <h3>Affordable Rates</h3>
+        <p>Enjoy competitive prices without compromising on quality or your environmental impact.</p>
       </div>
     </section>
 
-    <section class="booking">
-      <h2>Book Your Ride Now</h2>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="pickup">Pick Up Location:</label>
-          <input type="text" id="pickup" name="pickup" placeholder="Enter your pick up location" required>
-        </div>
-        <div class="form-group">
-          <label for="dropoff">Drop Off Location:</label>
-          <input type="text" id="dropoff" name="dropoff" placeholder="Enter your drop off location" required>
-        </div>
-        <div class="form-group">
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" required>
-        </div>
-        <div class="form-group">
-          <label for="time">Time:</label>
-          <input type="time" id="time" name="time" required>
-        </div>
-        <button type="submit">Book Now</button>
+    <section class="login">
+      <h2>Existing User? Login Here</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; Eco Rides 2024. All Rights Reserved.</p>
-    <ul>
-      <li><a href="#">Terms & Conditions</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
+    <p>&copy; Eco Rides 2024</p>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Privacy Policy</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1em;
+  margin: 0 10px;
+}
+
+header nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  color: #ddd;
+}
+
+header .login-signup {
+  display: flex;
+}
+
+header button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
